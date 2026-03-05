@@ -2,13 +2,164 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Vite + React + TS</title>
+		<title>Boughner Engineering | Personal Engineering Portfolio</title>
+		<meta
+			name="description"
+			content="Personal portfolio for Boughner Engineering showcasing software engineering, systems work, and freelance delivery for modern businesses."
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
 	</head>
-
 	<body>
-		<div id="root"></div>
-		<script type="module" src="/src/react-app/main.tsx"></script>
+		<div class="background-orb orb-1" aria-hidden="true"></div>
+		<div class="background-orb orb-2" aria-hidden="true"></div>
+		<div class="background-grid" aria-hidden="true"></div>
+
+		<header class="site-header" id="home">
+			<nav class="nav container">
+				<a href="#home" class="brand"><span class="brand-dot"></span>Boughner Engineering</a>
+				<button class="mobile-menu-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+				<ul class="nav-links">
+					<li><a href="#home" class="active">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#tech">Tech</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+			<section class="hero container reveal">
+				<p class="eyebrow">Personal Portfolio</p>
+				<h1>Boughner Engineering</h1>
+				<p class="hero-subtitle">
+					I help teams design, build, and scale reliable software systems. This site is my personal portfolio and freelance engineering profile.
+					<span class="placeholder">[Insert your personal positioning statement here]</span>
+				</p>
+				<div class="hero-actions">
+					<a href="#projects" class="btn btn-primary">View Projects</a>
+					<a href="#contact" class="btn btn-secondary">Contact</a>
+				</div>
+				<div class="hero-metrics">
+					<div class="metric-card"><span>Projects Delivered</span><strong>[XX]+</strong></div>
+					<div class="metric-card"><span>Years in Engineering</span><strong>[X]+</strong></div>
+					<div class="metric-card"><span>Response Time</span><strong>[24h]</strong></div>
+					<div class="metric-card"><span>Production Uptime</span><strong>[99.9%]</strong></div>
+				</div>
+			</section>
+		</header>
+
+		<main>
+			<section id="about" class="section reveal">
+				<div class="container about-layout">
+					<div>
+						<p class="section-label">About Me</p>
+						<h2>Engineer, builder, and long-term technical partner.</h2>
+						<p>[Placeholder personal bio] I build dependable applications and infrastructure with a focus on maintainability and business outcomes.</p>
+						<p>[Placeholder personal story] Share your background, your values, and the clients/products you enjoy supporting most.</p>
+					</div>
+					<div class="profile-placeholder">
+						<div class="avatar-placeholder">Your Photo</div>
+						<div class="profile-meta">
+							<span>Name: [Your Full Name]</span>
+							<span>Location: [City, Country]</span>
+							<span>Availability: [Open for freelance projects]</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="container skill-grid">
+					<article class="skill-card">Software Engineering</article>
+					<article class="skill-card">Infrastructure Automation</article>
+					<article class="skill-card">Systems Engineering</article>
+					<article class="skill-card">DevOps &amp; Cloud</article>
+					<article class="skill-card">Linux Systems</article>
+					<article class="skill-card">API Design</article>
+					<article class="skill-card">Performance Optimization</article>
+					<article class="skill-card">Observability</article>
+				</div>
+
+				<div class="container placeholder-card-grid">
+					<article class="placeholder-card"><h3>[Client Testimonial Placeholder]</h3><p>Add a short quote from a client about communication and outcomes.</p></article>
+					<article class="placeholder-card"><h3>[Service Offering Placeholder]</h3><p>Example: architecture consulting, platform modernization, automation sprints.</p></article>
+					<article class="placeholder-card"><h3>[Certification Placeholder]</h3><p>Add certifications, talks, open-source impact, or awards.</p></article>
+					<article class="placeholder-card"><h3>[Case Study Highlight Placeholder]</h3><p>Feature one headline result, e.g. cost reduction, speedup, or reliability increase.</p></article>
+				</div>
+			</section>
+
+			<section id="projects" class="section reveal">
+				<div class="container">
+					<p class="section-label">Projects</p>
+					<h2>Selected personal and client work</h2>
+					<div class="project-grid expanded-grid">
+						<article class="project-card"><div class="project-image">Project Screenshot</div><h3>[Project Alpha]</h3><p>[Placeholder summary for a high-impact product delivery.]</p><div class="tag-list"><span>TypeScript</span><span>Docker</span><span>AWS</span></div><button class="details-link">View Details</button></article>
+						<article class="project-card"><div class="project-image">Project Screenshot</div><h3>[Project Beta]</h3><p>[Placeholder summary for an infrastructure automation engagement.]</p><div class="tag-list"><span>Python</span><span>Kubernetes</span><span>Terraform</span></div><button class="details-link">View Details</button></article>
+						<article class="project-card"><div class="project-image">Project Screenshot</div><h3>[Project Gamma]</h3><p>[Placeholder summary for systems reliability and optimization.]</p><div class="tag-list"><span>Linux</span><span>CI/CD</span><span>Observability</span></div><button class="details-link">View Details</button></article>
+						<article class="project-card"><div class="project-image">Project Screenshot</div><h3>[Project Delta]</h3><p>[Placeholder summary for API/platform architecture design.]</p><div class="tag-list"><span>Node.js</span><span>PostgreSQL</span><span>Redis</span></div><button class="details-link">View Details</button></article>
+						<article class="project-card"><div class="project-image">Project Screenshot</div><h3>[Project Epsilon]</h3><p>[Placeholder summary for migration and modernization work.]</p><div class="tag-list"><span>Cloud</span><span>IaC</span><span>Security</span></div><button class="details-link">View Details</button></article>
+						<article class="project-card placeholder-project"><div class="project-image">Coming Soon</div><h3>[Future Project Placeholder]</h3><p>Reserve for upcoming case study or open-source project launch.</p><div class="tag-list"><span>[Tech]</span><span>[Tech]</span></div><button class="details-link">Add Details Later</button></article>
+					</div>
+				</div>
+			</section>
+
+			<section id="tech" class="section reveal">
+				<div class="container">
+					<p class="section-label">Technology Stack</p>
+					<h2>Core technologies I work with</h2>
+					<div class="badge-grid expanded-grid">
+						<span>Linux</span><span>Docker</span><span>Kubernetes</span><span>Python</span><span>TypeScript</span><span>React</span><span>Node.js</span><span>Infrastructure Automation</span><span>Cloud Architecture</span><span>CI/CD</span><span>GitHub Actions</span><span>Terraform</span><span>Prometheus</span><span>Grafana</span><span>PostgreSQL</span>
+					</div>
+				</div>
+			</section>
+
+			<section class="section reveal">
+				<div class="container">
+					<p class="section-label">Experience</p>
+					<h2>Professional Timeline</h2>
+					<div class="timeline">
+						<article class="timeline-item"><span class="timeline-date">[2024 – Present]</span><h3>Freelance Engineering</h3><p>[Placeholder description for current engineering clients and outcomes.]</p></article>
+						<article class="timeline-item"><span class="timeline-date">[2022 – 2024]</span><h3>Software Development Projects</h3><p>[Placeholder description for full-stack and product engineering work.]</p></article>
+						<article class="timeline-item"><span class="timeline-date">[2020 – 2022]</span><h3>Platform and DevOps Work</h3><p>[Placeholder description for deployment pipelines and cloud operations.]</p></article>
+						<article class="timeline-item"><span class="timeline-date">[2018 – 2020]</span><h3>Systems Engineering Work</h3><p>[Placeholder description for automation, reliability, and Linux operations.]</p></article>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact" class="section reveal">
+				<div class="container contact-layout">
+					<div>
+						<p class="section-label">Contact</p>
+						<h2>Work with me</h2>
+						<p>I’m available for freelance builds, technical consulting, and platform engineering engagements.</p>
+						<ul class="contact-links">
+							<li>Email: <a href="mailto:[your-email]">[your-email]</a></li>
+							<li>GitHub: <a href="#">[github.com/your-handle]</a></li>
+							<li>LinkedIn: <a href="#">[linkedin.com/in/your-profile]</a></li>
+						</ul>
+					</div>
+					<form class="contact-form">
+						<label>Name<input type="text" placeholder="Your name" /></label>
+						<label>Email<input type="email" placeholder="you@example.com" /></label>
+						<label>Budget Range<input type="text" placeholder="[e.g. $5k - $15k]" /></label>
+						<label>Project Details<textarea rows="5" placeholder="Share a brief overview of your project"></textarea></label>
+						<button type="submit" class="btn btn-primary">Send Inquiry</button>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container footer-content">
+				<p>Boughner Engineering</p>
+				<p>© <span id="year"></span> All rights reserved</p>
+			</div>
+		</footer>
+
+		<script type="module" src="script.js"></script>
 	</body>
 </html>
