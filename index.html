@@ -2,13 +2,208 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Vite + React + TS</title>
+		<title>Boughner Engineering | Precision Engineering & Software Development</title>
+		<meta
+			name="description"
+			content="Boughner Engineering is a premium freelance engineering studio focused on precision software development, infrastructure, and systems design."
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
 	</head>
-
 	<body>
-		<div id="root"></div>
-		<script type="module" src="/src/react-app/main.tsx"></script>
+		<div class="background-orb orb-1" aria-hidden="true"></div>
+		<div class="background-orb orb-2" aria-hidden="true"></div>
+		<div class="background-grid" aria-hidden="true"></div>
+
+		<header class="site-header" id="home">
+			<nav class="nav container">
+				<a href="#home" class="brand">
+					<span class="brand-dot"></span>
+					Boughner Engineering
+				</a>
+				<button class="mobile-menu-toggle" aria-label="Toggle navigation">
+					<span></span><span></span><span></span>
+				</button>
+				<ul class="nav-links">
+					<li><a href="#home" class="active">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#tech">Tech</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+			<section class="hero container reveal">
+				<p class="eyebrow">Freelance Engineering Studio</p>
+				<h1>Precision Engineering &amp; Software Development</h1>
+				<p class="hero-subtitle">
+					Helping ambitious teams ship robust software, infrastructure, and systems with
+					clarity, speed, and craftsmanship. <span class="placeholder">[Placeholder tagline]</span>
+				</p>
+				<div class="hero-actions">
+					<a href="#projects" class="btn btn-primary">View Projects</a>
+					<a href="#contact" class="btn btn-secondary">Contact</a>
+				</div>
+				<div class="hero-metrics">
+					<div class="metric-card">
+						<span>Deliverables</span>
+						<strong>[XX]+</strong>
+					</div>
+					<div class="metric-card">
+						<span>Client Satisfaction</span>
+						<strong>[XX%]</strong>
+					</div>
+					<div class="metric-card">
+						<span>Years Experience</span>
+						<strong>[X]+</strong>
+					</div>
+				</div>
+			</section>
+		</header>
+
+		<main>
+			<section id="about" class="section reveal">
+				<div class="container about-layout">
+					<div>
+						<p class="section-label">About</p>
+						<h2>Engineering systems that scale with confidence.</h2>
+						<p>
+							[Placeholder professional bio] Lorem ipsum dolor sit amet, consectetur
+							adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit
+							aliquet.
+						</p>
+						<p>
+							[Placeholder mission statement] Build better software through thoughtful
+							architecture, elegant implementation, and resilient operations.
+						</p>
+					</div>
+					<div class="profile-placeholder">
+						<div class="avatar-placeholder">Profile Image</div>
+						<div class="profile-meta">
+							<span>Location: [City, Country]</span>
+							<span>Availability: [Open to new projects]</span>
+						</div>
+					</div>
+				</div>
+				<div class="container skill-grid">
+					<article class="skill-card">Software Engineering</article>
+					<article class="skill-card">Infrastructure Automation</article>
+					<article class="skill-card">Systems Engineering</article>
+					<article class="skill-card">DevOps &amp; Cloud</article>
+					<article class="skill-card">Linux Systems</article>
+				</div>
+			</section>
+
+			<section id="projects" class="section reveal">
+				<div class="container">
+					<p class="section-label">Projects</p>
+					<h2>Selected engineering work</h2>
+					<div class="project-grid">
+						<article class="project-card">
+							<div class="project-image">Project Visual</div>
+							<h3>[Project Alpha]</h3>
+							<p>[Placeholder summary for a high-impact project deliverable.]</p>
+							<div class="tag-list"><span>TypeScript</span><span>Docker</span><span>AWS</span></div>
+							<button class="details-link">View Details</button>
+						</article>
+						<article class="project-card">
+							<div class="project-image">Project Visual</div>
+							<h3>[Project Beta]</h3>
+							<p>[Placeholder summary for a platform or infrastructure engagement.]</p>
+							<div class="tag-list"><span>Python</span><span>Kubernetes</span><span>Terraform</span></div>
+							<button class="details-link">View Details</button>
+						</article>
+						<article class="project-card">
+							<div class="project-image">Project Visual</div>
+							<h3>[Project Gamma]</h3>
+							<p>[Placeholder summary for systems engineering and optimization work.]</p>
+							<div class="tag-list"><span>Linux</span><span>CI/CD</span><span>Observability</span></div>
+							<button class="details-link">View Details</button>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section id="tech" class="section reveal">
+				<div class="container">
+					<p class="section-label">Technology Stack</p>
+					<h2>Tools I use to deliver production-grade systems</h2>
+					<div class="badge-grid">
+						<span>Linux</span><span>Docker</span><span>Kubernetes</span><span>Python</span>
+						<span>TypeScript</span><span>React</span><span>Infrastructure Automation</span>
+						<span>Cloud Architecture</span><span>CI/CD</span><span>GitHub Actions</span>
+					</div>
+				</div>
+			</section>
+
+			<section class="section reveal">
+				<div class="container">
+					<p class="section-label">Experience</p>
+					<h2>Timeline</h2>
+					<div class="timeline">
+						<article class="timeline-item">
+							<span class="timeline-date">[2024 – Present]</span>
+							<h3>Freelance Engineering</h3>
+							<p>[Placeholder description for current freelance engineering engagements.]</p>
+						</article>
+						<article class="timeline-item">
+							<span class="timeline-date">[2022 – 2024]</span>
+							<h3>Software Development Projects</h3>
+							<p>[Placeholder description for full-stack and platform initiatives.]</p>
+						</article>
+						<article class="timeline-item">
+							<span class="timeline-date">[2019 – 2022]</span>
+							<h3>Systems Engineering Work</h3>
+							<p>[Placeholder description for systems reliability and automation.]</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact" class="section reveal">
+				<div class="container contact-layout">
+					<div>
+						<p class="section-label">Contact</p>
+						<h2>Let’s build something exceptional</h2>
+						<p>Tell me about your project goals, timeline, and technical challenges.</p>
+						<ul class="contact-links">
+							<li>Email: <a href="mailto:placeholder@boughner.engineering">[placeholder@boughner.engineering]</a></li>
+							<li>GitHub: <a href="#">[github.com/placeholder]</a></li>
+							<li>LinkedIn: <a href="#">[linkedin.com/in/placeholder]</a></li>
+						</ul>
+					</div>
+					<form class="contact-form">
+						<label>
+							Name
+							<input type="text" placeholder="Your name" />
+						</label>
+						<label>
+							Email
+							<input type="email" placeholder="you@example.com" />
+						</label>
+						<label>
+							Project Details
+							<textarea rows="5" placeholder="Share a brief overview of your project"></textarea>
+						</label>
+						<button type="submit" class="btn btn-primary">Send Inquiry</button>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container footer-content">
+				<p>Boughner Engineering</p>
+				<p>© <span id="year"></span> All rights reserved</p>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
 	</body>
 </html>
