@@ -226,7 +226,7 @@ a {
 
 .hero-metrics {
 	display: grid;
-	grid-template-columns: repeat(3, minmax(150px, 1fr));
+	grid-template-columns: repeat(4, minmax(150px, 1fr));
 	gap: 1rem;
 	max-width: 760px;
 }
@@ -289,9 +289,27 @@ a {
 	gap: 1rem;
 }
 
+.placeholder-card-grid {
+	margin-top: 1.2rem;
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.placeholder-card {
+	padding: 1rem;
+	background: rgba(255, 255, 255, 0.02);
+	border: 1px dashed rgba(99, 102, 241, 0.45);
+	border-radius: 1rem;
+}
+
+.placeholder-project {
+	border-style: dashed;
+}
+
 .skill-grid {
 	margin-top: 2rem;
-	grid-template-columns: repeat(5, minmax(0, 1fr));
+	grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .skill-card,
@@ -319,6 +337,10 @@ a {
 
 .project-grid {
 	grid-template-columns: repeat(3, minmax(0, 1fr));
+	margin-top: 2rem;
+}
+
+.expanded-grid {
 	margin-top: 2rem;
 }
 
@@ -528,6 +550,10 @@ a {
 	.badge-grid {
 		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}
+
+	.placeholder-card-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
 }
 
 @media (max-width: 760px) {
@@ -560,6 +586,7 @@ a {
 	.skill-grid,
 	.project-grid,
 	.badge-grid,
+	.placeholder-card-grid,
 	.about-layout,
 	.contact-layout {
 		grid-template-columns: 1fr;
