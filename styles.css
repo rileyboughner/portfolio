@@ -224,31 +224,6 @@ a {
 	color: var(--text);
 }
 
-.hero-metrics {
-	display: grid;
-	grid-template-columns: repeat(4, minmax(150px, 1fr));
-	gap: 1rem;
-	max-width: 760px;
-}
-
-.metric-card {
-	background: linear-gradient(145deg, rgba(99, 102, 241, 0.1), rgba(17, 17, 17, 0.8));
-	padding: 1rem;
-	border-radius: 1rem;
-	border: 1px solid var(--line);
-}
-
-.metric-card span {
-	display: block;
-	font-size: 0.8rem;
-	font-family: "JetBrains Mono", monospace;
-	color: var(--text-secondary);
-}
-
-.metric-card strong {
-	font-size: 1.4rem;
-}
-
 .about-layout,
 .contact-layout {
 	display: grid;
@@ -264,14 +239,12 @@ a {
 	border-radius: 1rem;
 }
 
-.avatar-placeholder {
+.profile-avatar {
+	display: block;
+	width: 100%;
 	height: 220px;
-	display: grid;
-	place-items: center;
+	object-fit: cover;
 	border-radius: 0.9rem;
-	background: linear-gradient(130deg, rgba(99, 102, 241, 0.24), rgba(59, 130, 246, 0.14));
-	font-family: "JetBrains Mono", monospace;
-	color: #e4e4e7;
 	margin-bottom: 1rem;
 }
 
@@ -287,20 +260,6 @@ a {
 .badge-grid {
 	display: grid;
 	gap: 1rem;
-}
-
-.placeholder-card-grid {
-	margin-top: 1.2rem;
-	display: grid;
-	gap: 1rem;
-	grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.placeholder-card {
-	padding: 1rem;
-	background: rgba(255, 255, 255, 0.02);
-	border: 1px dashed rgba(99, 102, 241, 0.45);
-	border-radius: 1rem;
 }
 
 .placeholder-project {
@@ -550,10 +509,6 @@ a {
 	.badge-grid {
 		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}
-
-	.placeholder-card-grid {
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-	}
 }
 
 @media (max-width: 760px) {
@@ -582,11 +537,9 @@ a {
 		display: flex;
 	}
 
-	.hero-metrics,
 	.skill-grid,
 	.project-grid,
 	.badge-grid,
-	.placeholder-card-grid,
 	.about-layout,
 	.contact-layout {
 		grid-template-columns: 1fr;
