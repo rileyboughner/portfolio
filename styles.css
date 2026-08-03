@@ -5,9 +5,9 @@
 	--ink: #1c1a17;
 	--ink-soft: #58524a;
 	--ink-faint: #8c8577;
-	--accent: #d64a2b;
-	--accent-soft: rgba(214, 74, 43, 0.32);
-	--accent-wash: rgba(214, 74, 43, 0.08);
+	--accent: #1f6d5c;
+	--accent-soft: rgba(31, 109, 92, 0.32);
+	--accent-wash: rgba(31, 109, 92, 0.08);
 }
 
 * {
