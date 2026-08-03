@@ -8,108 +8,176 @@
 			name="description"
 			content="Portfolio for Riley Boughner, a University of Cincinnati Computer Science student focused on DevSecOps, cloud infrastructure, software engineering, and Kubernetes automation."
 		/>
+		<meta name="theme-color" content="#f5efe4" />
+		<link
+			rel="icon"
+			href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23d64a2b'/%3E%3Ctext x='50' y='69' font-family='Georgia,serif' font-size='58' fill='%23f5efe4' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E"
+		/>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<div class="background-orb orb-1" aria-hidden="true"></div>
-		<div class="background-orb orb-2" aria-hidden="true"></div>
-		<div class="background-grid" aria-hidden="true"></div>
+		<div class="grain" aria-hidden="true"></div>
 
 		<header class="site-header" id="home">
 			<nav class="nav container">
-				<a href="#home" class="brand"><span class="brand-dot"></span>Riley Boughner</a>
+				<a href="#home" class="brand">
+					<span class="brand-mark">RB</span>
+					<span class="brand-name">Riley Boughner</span>
+				</a>
 				<button class="mobile-menu-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
 				<ul class="nav-links">
 					<li><a href="#home" class="active">Home</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#experience">Experience</a></li>
 					<li><a href="#projects">Projects</a></li>
-					<li><a href="#tech">Skills</a></li>
+					<li><a href="#tech">Toolkit</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 
 			<section class="hero container reveal">
-				<p class="eyebrow">DevSecOps • Cloud Infrastructure • Software Engineering</p>
-				<h1>Riley Boughner</h1>
+				<p class="eyebrow">DevSecOps &middot; Cloud Infrastructure &middot; Software Engineering</p>
+				<h1>
+					I build <span class="mark">secure</span>,<br />
+					<em>reliable</em> systems.
+				</h1>
 				<p class="hero-subtitle">
-					Computer Science student at the University of Cincinnati building secure delivery pipelines, cloud infrastructure, production web applications, and Kubernetes automation.
+					I'm Riley — a Computer Science student at the University of Cincinnati building secure delivery pipelines, cloud infrastructure, production web applications, and Kubernetes automation.
 				</p>
 				<div class="hero-actions">
 					<a href="#experience" class="btn btn-primary">View Experience</a>
-					<a href="assets/CS_ResumeTemplate_2023.pdf" class="btn btn-secondary" target="_blank" rel="noreferrer">Download Resume</a>
+					<a href="assets/CS_ResumeTemplate_2023.pdf" class="btn btn-secondary" target="_blank" rel="noreferrer">Download R&eacute;sum&eacute; &rarr;</a>
 				</div>
+				<p class="status-line"><span class="status-dot" aria-hidden="true"></span>Currently: <span id="statusText">shipping secure CI/CD pipelines</span></p>
 			</section>
+
+			<a href="#about" class="scroll-cue" aria-label="Scroll to about section">Scroll<span></span></a>
 		</header>
 
 		<main>
 			<section id="about" class="section reveal">
 				<div class="container about-layout">
 					<div>
-						<p class="section-label">About Me</p>
-						<h2>Security-minded engineer focused on reliable platforms and developer velocity.</h2>
-						<p>I’m pursuing a Bachelor of Science in Computer Science at the University of Cincinnati and am available for full-time work beginning May 2027.</p>
+						<p class="section-label">01 &mdash; About</p>
+						<h2 class="pull-quote">Security-minded engineer focused on reliable platforms and developer velocity.</h2>
+						<p>I&rsquo;m pursuing a Bachelor of Science in Computer Science at the University of Cincinnati and am available for full-time work beginning May 2027.</p>
 						<p>My recent work spans Azure DevOps pipeline standardization, Terraform-based cloud provisioning, Azure Functions automation, PLM system enhancement, PHP web development, MySQL optimization, and hands-on Kubernetes operations.</p>
 					</div>
-					<div class="profile-placeholder">
+					<div class="profile-card">
+						<span class="profile-tag">Open to work</span>
 						<img class="profile-avatar" src="https://avatars.githubusercontent.com/u/66699507?v=4&amp;size=64" alt="Riley Boughner GitHub avatar" />
 						<div class="profile-meta">
-							<span>Name: Riley Boughner</span>
-							<span>Location: Cincinnati, Ohio</span>
-							<span>Email: Mail@RileyBoughner.dev</span>
-							<span>Phone: 614-800-0414</span>
+							<span><em>Name</em>Riley Boughner</span>
+							<span><em>Location</em>Cincinnati, Ohio</span>
+							<span><em>Email</em>Mail@RileyBoughner.dev</span>
+							<span><em>Phone</em>614-800-0414</span>
 						</div>
 					</div>
 				</div>
 
-				<div class="container skill-grid">
-					<article class="skill-card">DevSecOps Engineering</article>
-					<article class="skill-card">Azure DevOps Pipelines</article>
-					<article class="skill-card">Terraform Infrastructure</article>
-					<article class="skill-card">Kubernetes &amp; GitOps</article>
-					<article class="skill-card">PHP Web Development</article>
-					<article class="skill-card">MySQL Optimization</article>
-					<article class="skill-card">Technical Documentation</article>
-					<article class="skill-card">IT Troubleshooting</article>
+				<div class="marquee container-bleed" aria-hidden="false">
+					<div class="marquee-track">
+						<span>DevSecOps Engineering</span><span class="dot">&#10022;</span>
+						<span>Azure DevOps Pipelines</span><span class="dot">&#10022;</span>
+						<span>Terraform Infrastructure</span><span class="dot">&#10022;</span>
+						<span>Kubernetes &amp; GitOps</span><span class="dot">&#10022;</span>
+						<span>PHP Web Development</span><span class="dot">&#10022;</span>
+						<span>MySQL Optimization</span><span class="dot">&#10022;</span>
+						<span>Technical Documentation</span><span class="dot">&#10022;</span>
+						<span>IT Troubleshooting</span><span class="dot">&#10022;</span>
+						<span>DevSecOps Engineering</span><span class="dot">&#10022;</span>
+						<span>Azure DevOps Pipelines</span><span class="dot">&#10022;</span>
+						<span>Terraform Infrastructure</span><span class="dot">&#10022;</span>
+						<span>Kubernetes &amp; GitOps</span><span class="dot">&#10022;</span>
+						<span>PHP Web Development</span><span class="dot">&#10022;</span>
+						<span>MySQL Optimization</span><span class="dot">&#10022;</span>
+						<span>Technical Documentation</span><span class="dot">&#10022;</span>
+						<span>IT Troubleshooting</span><span class="dot">&#10022;</span>
+					</div>
 				</div>
 			</section>
 
 			<section id="experience" class="section reveal">
 				<div class="container">
-					<p class="section-label">Experience</p>
-					<h2>Professional Timeline</h2>
+					<p class="section-label">02 &mdash; Experience</p>
+					<h2>Where I&rsquo;ve worked</h2>
 					<div class="timeline">
-						<article class="timeline-item"><span class="timeline-date">May 2026 – Aug 2026</span><h3>DevSecOps Engineer • Marathon Petroleum Company</h3><p>Designed standardized Azure DevOps CI/CD pipelines, integrated automated security checks, built modular Terraform infrastructure, automated service integrations with Azure Functions, and optimized Azure SQL databases.</p></article>
-						<article class="timeline-item"><span class="timeline-date">Jan 2026 – May 2026</span><h3>Application Engineer • Saratech</h3><p>Documented workflows and configurations, gathered cross-functional requirements, configured Siemens Teamcenter PLM solutions, and validated deployments through testing and debugging.</p></article>
-						<article class="timeline-item"><span class="timeline-date">Aug 2024 – Oct 2025</span><h3>Software Engineer • SuperFloSystems</h3><p>Developed and maintained PHP-based websites, established coding standards, delivered features and bug fixes, optimized complex MySQL queries, and strengthened application security practices.</p></article>
-						<article class="timeline-item"><span class="timeline-date">Jan 2024 – Aug 2024</span><h3>IT Technician • Carestar</h3><p>Resolved software, hardware, networking, and system administration tickets across Windows, Linux, and mobile platforms while performing QA checks and root-cause analysis.</p></article>
+						<article class="timeline-item">
+							<span class="timeline-date">May 2026 &ndash; Aug 2026</span>
+							<div>
+								<h3>DevSecOps Engineer <span>&mdash; Marathon Petroleum Company</span></h3>
+								<p>Designed standardized Azure DevOps CI/CD pipelines, integrated automated security checks, built modular Terraform infrastructure, automated service integrations with Azure Functions, and optimized Azure SQL databases.</p>
+							</div>
+						</article>
+						<article class="timeline-item">
+							<span class="timeline-date">Jan 2026 &ndash; May 2026</span>
+							<div>
+								<h3>Application Engineer <span>&mdash; Saratech</span></h3>
+								<p>Documented workflows and configurations, gathered cross-functional requirements, configured Siemens Teamcenter PLM solutions, and validated deployments through testing and debugging.</p>
+							</div>
+						</article>
+						<article class="timeline-item">
+							<span class="timeline-date">Aug 2024 &ndash; Oct 2025</span>
+							<div>
+								<h3>Software Engineer <span>&mdash; SuperFloSystems</span></h3>
+								<p>Developed and maintained PHP-based websites, established coding standards, delivered features and bug fixes, optimized complex MySQL queries, and strengthened application security practices.</p>
+							</div>
+						</article>
+						<article class="timeline-item">
+							<span class="timeline-date">Jan 2024 &ndash; Aug 2024</span>
+							<div>
+								<h3>IT Technician <span>&mdash; Carestar</span></h3>
+								<p>Resolved software, hardware, networking, and system administration tickets across Windows, Linux, and mobile platforms while performing QA checks and root-cause analysis.</p>
+							</div>
+						</article>
 					</div>
 				</div>
 			</section>
 
 			<section id="projects" class="section reveal">
 				<div class="container">
-					<p class="section-label">Projects</p>
-					<h2>Selected technical work</h2>
-					<div class="project-grid expanded-grid">
-						<article class="project-card"><div class="project-image">Kubernetes</div><h3>Kubernetes Homelab</h3><p>Built and maintained a self-hosted Kubernetes cluster for production-like containerized workloads, GitOps delivery, Helm-based releases, NGINX ingress, Terraform-provisioned VMs, and Prometheus/Grafana monitoring.</p><div class="tag-list"><span>Kubernetes</span><span>Terraform</span><span>FluxCD</span><span>Helm</span></div></article>
-						<article class="project-card"><div class="project-image">CI/CD</div><h3>Secure Azure DevOps Delivery</h3><p>Standardized reusable CI/CD pipelines and integrated security gates to help developers find vulnerabilities earlier while improving deployment consistency and release speed.</p><div class="tag-list"><span>Azure DevOps</span><span>Security</span><span>GitOps</span></div></article>
-						<article class="project-card"><div class="project-image">Automation</div><h3>Cloud Automation with Azure Functions</h3><p>Developed backend automation and service integrations that reduced manual operational overhead and simplified developer workflows.</p><div class="tag-list"><span>Azure Functions</span><span>Terraform</span><span>Azure SQL</span></div></article>
+					<p class="section-label">03 &mdash; Projects</p>
+					<h2>Selected work</h2>
+					<div class="project-list">
+						<article class="project-row">
+							<span class="project-index">01</span>
+							<div class="project-body">
+								<h3>Kubernetes Homelab</h3>
+								<p>Built and maintained a self-hosted Kubernetes cluster for production-like containerized workloads, GitOps delivery, Helm-based releases, NGINX ingress, Terraform-provisioned VMs, and Prometheus/Grafana monitoring.</p>
+								<div class="tag-list"><span>Kubernetes</span><span>Terraform</span><span>FluxCD</span><span>Helm</span></div>
+							</div>
+						</article>
+						<article class="project-row">
+							<span class="project-index">02</span>
+							<div class="project-body">
+								<h3>Secure Azure DevOps Delivery</h3>
+								<p>Standardized reusable CI/CD pipelines and integrated security gates to help developers find vulnerabilities earlier while improving deployment consistency and release speed.</p>
+								<div class="tag-list"><span>Azure DevOps</span><span>Security</span><span>GitOps</span></div>
+							</div>
+						</article>
+						<article class="project-row">
+							<span class="project-index">03</span>
+							<div class="project-body">
+								<h3>Cloud Automation with Azure Functions</h3>
+								<p>Developed backend automation and service integrations that reduced manual operational overhead and simplified developer workflows.</p>
+								<div class="tag-list"><span>Azure Functions</span><span>Terraform</span><span>Azure SQL</span></div>
+							</div>
+						</article>
 					</div>
 				</div>
 			</section>
 
 			<section id="tech" class="section reveal">
 				<div class="container">
-					<p class="section-label">Skills</p>
-					<h2>Core technologies I work with</h2>
-					<div class="badge-grid expanded-grid">
+					<p class="section-label">04 &mdash; Toolkit</p>
+					<h2>Core technologies I rely on</h2>
+					<div class="stamp-grid">
 						<span>Python</span><span>Bash</span><span>PowerShell</span><span>C/C++</span><span>JavaScript</span><span>PHP</span><span>Azure</span><span>Terraform</span><span>Kubernetes</span><span>FluxCD</span><span>Azure DevOps Pipelines</span><span>GitOps</span><span>Prometheus</span><span>Grafana</span><span>Git</span><span>Helm</span><span>Linux</span><span>NGINX</span><span>Docker</span><span>MySQL</span>
 					</div>
 				</div>
@@ -118,22 +186,23 @@
 			<section id="contact" class="section reveal">
 				<div class="container contact-layout">
 					<div>
-						<p class="section-label">Contact</p>
-						<h2>Let’s connect</h2>
-						<p>I’m available for full-time software engineering, DevSecOps, cloud infrastructure, and platform engineering opportunities beginning May 2027.</p>
+						<p class="section-label">05 &mdash; Contact</p>
+						<h2>Let&rsquo;s build something.</h2>
+						<p>I&rsquo;m available for full-time software engineering, DevSecOps, cloud infrastructure, and platform engineering opportunities beginning May 2027.</p>
+						<a class="contact-email" href="mailto:Mail@RileyBoughner.dev">Mail@RileyBoughner.dev</a>
 						<ul class="contact-links">
-							<li>Email: <a href="mailto:Mail@RileyBoughner.dev">Mail@RileyBoughner.dev</a></li>
-							<li>Website: <a href="https://RileyBoughner.dev" target="_blank" rel="noreferrer">RileyBoughner.dev</a></li>
-							<li>GitHub: <a href="https://github.com/RileyBoughner" target="_blank" rel="noreferrer">github.com/RileyBoughner</a></li>
-							<li>LinkedIn: <a href="https://www.linkedin.com/in/riley-boughner-39979b262/" target="_blank" rel="noreferrer">linkedin.com/in/Riley-Boughner</a></li>
+							<li><a href="https://RileyBoughner.dev" target="_blank" rel="noreferrer">RileyBoughner.dev</a></li>
+							<li><a href="https://github.com/RileyBoughner" target="_blank" rel="noreferrer">github.com/RileyBoughner</a></li>
+							<li><a href="https://www.linkedin.com/in/riley-boughner-39979b262/" target="_blank" rel="noreferrer">linkedin.com/in/Riley-Boughner</a></li>
 						</ul>
 					</div>
-					<form class="contact-form">
-						<label>Name<input type="text" placeholder="Your name" /></label>
-						<label>Email<input type="email" placeholder="you@example.com" /></label>
+					<form class="contact-form" id="contactForm">
+						<label>Name<input type="text" placeholder="Your name" required /></label>
+						<label>Email<input type="email" placeholder="you@example.com" required /></label>
 						<label>Opportunity Type<input type="text" placeholder="Full-time, internship, or project" /></label>
-						<label>Message<textarea rows="5" placeholder="Share a brief overview of the opportunity"></textarea></label>
+						<label>Message<textarea rows="4" placeholder="Share a brief overview of the opportunity" required></textarea></label>
 						<button type="submit" class="btn btn-primary">Send Message</button>
+						<p class="form-note" id="formNote" role="status"></p>
 					</form>
 				</div>
 			</section>
@@ -142,7 +211,7 @@
 		<footer class="site-footer">
 			<div class="container footer-content">
 				<p>Riley Boughner</p>
-				<p>© <span id="year"></span> All rights reserved</p>
+				<p>&copy; <span id="year"></span> &middot; Designed &amp; built by hand.</p>
 			</div>
 		</footer>
 

@@ -58,13 +58,36 @@ const sectionObserver = new IntersectionObserver(
 
 sections.forEach((section) => sectionObserver.observe(section));
 
-// Lightweight parallax effect for gradient orbs.
-const orbs = document.querySelectorAll(".background-orb");
-window.addEventListener("mousemove", (event) => {
-	const x = (event.clientX / window.innerWidth - 0.5) * 14;
-	const y = (event.clientY / window.innerHeight - 0.5) * 14;
-	orbs.forEach((orb, index) => {
-		const factor = index === 0 ? 1 : -1;
-		orb.style.transform = `translate(${x * factor}px, ${y * factor}px)`;
+// Rotate the "currently" status line in the hero.
+const statusPhrases = [
+	"shipping secure CI/CD pipelines",
+	"tinkering with my Kubernetes homelab",
+	"open to full-time roles starting May 2027",
+	"learning something new in cloud security",
+];
+const statusText = document.getElementById("statusText");
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+if (statusText && !reduceMotion) {
+	let statusIndex = 0;
+	setInterval(() => {
+		statusIndex = (statusIndex + 1) % statusPhrases.length;
+		statusText.style.opacity = 0;
+		setTimeout(() => {
+			statusText.textContent = statusPhrases[statusIndex];
+			statusText.style.opacity = 1;
+		}, 350);
+	}, 3200);
+}
+
+// Friendly inline confirmation for the contact form (no backend wired up yet).
+const contactForm = document.getElementById("contactForm");
+const formNote = document.getElementById("formNote");
+
+if (contactForm) {
+	contactForm.addEventListener("submit", (event) => {
+		event.preventDefault();
+		formNote.textContent = "Thanks — I'll get back to you soon. (Email me directly for now.)";
+		contactForm.reset();
 	});
-});
+}
