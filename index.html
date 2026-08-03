@@ -8,132 +8,151 @@
 			name="description"
 			content="Portfolio for Riley Boughner, a University of Cincinnati Computer Science student focused on DevSecOps, cloud infrastructure, software engineering, and Kubernetes automation."
 		/>
-		<meta name="theme-color" content="#f5efe4" />
+		<meta name="theme-color" content="#0a0d0b" />
 		<link
 			rel="icon"
-			href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23d64a2b'/%3E%3Ctext x='50' y='69' font-family='Georgia,serif' font-size='58' fill='%23f5efe4' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E"
+			href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%230a0d0b'/%3E%3Ctext x='50' y='68' font-family='monospace' font-weight='700' font-size='56' fill='%23ffb400' text-anchor='middle'%3E%3E_%3C/text%3E%3C/svg%3E"
 		/>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<div class="grain" aria-hidden="true"></div>
+		<div class="scanlines" aria-hidden="true"></div>
 
 		<header class="site-header" id="home">
-			<nav class="nav container">
-				<a href="#home" class="brand">
-					<span class="brand-mark">RB</span>
-					<span class="brand-name">Riley Boughner</span>
-				</a>
-				<button class="mobile-menu-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
-				<ul class="nav-links">
-					<li><a href="#home" class="active">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#experience">Experience</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#tech">Toolkit</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
+			<nav class="nav">
+				<div class="nav-inner container">
+					<a href="#home" class="brand">
+						<span class="brand-dot"></span><span class="brand-dot"></span><span class="brand-dot"></span>
+						<span class="brand-title">riley@boughner:~ — portfolio</span>
+					</a>
+					<button class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">[ menu ]</button>
+					<ul class="nav-links">
+						<li><a href="#home" class="active">cd #home</a></li>
+						<li><a href="#about">cd #about</a></li>
+						<li><a href="#experience">cd #experience</a></li>
+						<li><a href="#projects">cd #projects</a></li>
+						<li><a href="#tech">cd #toolkit</a></li>
+						<li><a href="#contact">cd #contact</a></li>
+					</ul>
+				</div>
 			</nav>
 
 			<section class="hero container reveal">
-				<p class="eyebrow">DevSecOps &middot; Cloud Infrastructure &middot; Software Engineering</p>
-				<h1>
-					I build <span class="mark">secure</span>,<br />
-					<em>reliable</em> systems.
-				</h1>
-				<p class="hero-subtitle">
+				<p class="line"><span class="prompt">guest@rileyboughner</span><span class="path">:~$</span> <span class="cmd">whoami</span></p>
+				<p class="out">Riley Boughner — DevSecOps &amp; Software Engineer</p>
+
+				<p class="line"><span class="prompt">guest@rileyboughner</span><span class="path">:~$</span> <span class="cmd">cat mission.txt</span></p>
+				<h1 class="ascii">I build secure,<br />reliable systems.</h1>
+				<p class="out hero-sub">
 					I'm Riley — a Computer Science student at the University of Cincinnati building secure delivery pipelines, cloud infrastructure, production web applications, and Kubernetes automation.
 				</p>
-				<div class="hero-actions">
-					<a href="#experience" class="btn btn-primary">View Experience</a>
-					<a href="assets/CS_ResumeTemplate_2023.pdf" class="btn btn-secondary" target="_blank" rel="noreferrer">Download R&eacute;sum&eacute; &rarr;</a>
-				</div>
-				<p class="status-line"><span class="status-dot" aria-hidden="true"></span>Currently: <span id="statusText">shipping secure CI/CD pipelines</span></p>
-			</section>
 
-			<a href="#about" class="scroll-cue" aria-label="Scroll to about section">Scroll<span></span></a>
+				<p class="line"><span class="prompt">guest@rileyboughner</span><span class="path">:~$</span> <span class="cmd">./run.sh --action</span></p>
+				<div class="hero-actions">
+					<a href="#experience" class="btn btn-primary">$ view-experience</a>
+					<a href="assets/CS_ResumeTemplate_2023.pdf" class="btn btn-secondary" target="_blank" rel="noreferrer">$ curl -O resume.pdf</a>
+				</div>
+
+				<p class="status-line"><span class="status-dot" aria-hidden="true"></span><span>[ status ] currently: <span id="statusText">shipping secure CI/CD pipelines</span></span></p>
+				<p class="line"><span class="prompt">guest@rileyboughner</span><span class="path">:~$</span> <span class="cursor" aria-hidden="true"></span></p>
+			</section>
 		</header>
 
 		<main>
 			<section id="about" class="section reveal">
-				<div class="container about-layout">
-					<div>
-						<p class="section-label">01 &mdash; About</p>
-						<h2 class="pull-quote">Security-minded engineer focused on reliable platforms and developer velocity.</h2>
-						<p>I&rsquo;m pursuing a Bachelor of Science in Computer Science at the University of Cincinnati and am available for full-time work beginning May 2027.</p>
-						<p>My recent work spans Azure DevOps pipeline standardization, Terraform-based cloud provisioning, Azure Functions automation, PLM system enhancement, PHP web development, MySQL optimization, and hands-on Kubernetes operations.</p>
-					</div>
-					<div class="profile-card">
-						<span class="profile-tag">Open to work</span>
-						<img class="profile-avatar" src="https://avatars.githubusercontent.com/u/66699507?v=4&amp;size=64" alt="Riley Boughner GitHub avatar" />
-						<div class="profile-meta">
-							<span><em>Name</em>Riley Boughner</span>
-							<span><em>Location</em>Cincinnati, Ohio</span>
-							<span><em>Email</em>Mail@RileyBoughner.dev</span>
-							<span><em>Phone</em>614-800-0414</span>
+				<div class="container">
+					<p class="section-label"><span class="prompt">guest@rileyboughner</span><span class="path">:~$</span> cat about.txt</p>
+					<div class="about-layout">
+						<div class="about-copy">
+							<h2>Security-minded engineer focused on reliable platforms and developer velocity.</h2>
+							<p class="out">I&rsquo;m pursuing a Bachelor of Science in Computer Science at the University of Cincinnati and am available for full-time work beginning May 2027.</p>
+							<p class="out">My recent work spans Azure DevOps pipeline standardization, Terraform-based cloud provisioning, Azure Functions automation, PLM system enhancement, PHP web development, MySQL optimization, and hands-on Kubernetes operations.</p>
+						</div>
+						<div class="profile-card">
+							<span class="profile-tag"><span class="status-dot" aria-hidden="true"></span>OPEN_TO_WORK</span>
+							<img class="profile-avatar" src="https://avatars.githubusercontent.com/u/66699507?v=4&amp;size=128" alt="Riley Boughner GitHub avatar" />
+							<pre class="profile-json"><span class="k">"name"</span>: <span class="v">"Riley Boughner"</span>,
+<span class="k">"location"</span>: <span class="v">"Cincinnati, OH"</span>,
+<span class="k">"email"</span>: <span class="v">"Mail@RileyBoughner.dev"</span>,
+<span class="k">"phone"</span>: <span class="v">"614-800-0414"</span></pre>
 						</div>
 					</div>
 				</div>
 
-				<div class="marquee container-bleed" aria-hidden="false">
+				<div class="marquee container-bleed" aria-hidden="true">
 					<div class="marquee-track">
-						<span>DevSecOps Engineering</span><span class="dot">&#10022;</span>
-						<span>Azure DevOps Pipelines</span><span class="dot">&#10022;</span>
-						<span>Terraform Infrastructure</span><span class="dot">&#10022;</span>
-						<span>Kubernetes &amp; GitOps</span><span class="dot">&#10022;</span>
-						<span>PHP Web Development</span><span class="dot">&#10022;</span>
-						<span>MySQL Optimization</span><span class="dot">&#10022;</span>
-						<span>Technical Documentation</span><span class="dot">&#10022;</span>
-						<span>IT Troubleshooting</span><span class="dot">&#10022;</span>
-						<span>DevSecOps Engineering</span><span class="dot">&#10022;</span>
-						<span>Azure DevOps Pipelines</span><span class="dot">&#10022;</span>
-						<span>Terraform Infrastructure</span><span class="dot">&#10022;</span>
-						<span>Kubernetes &amp; GitOps</span><span class="dot">&#10022;</span>
-						<span>PHP Web Development</span><span class="dot">&#10022;</span>
-						<span>MySQL Optimization</span><span class="dot">&#10022;</span>
-						<span>Technical Documentation</span><span class="dot">&#10022;</span>
-						<span>IT Troubleshooting</span><span class="dot">&#10022;</span>
+						<span>DevSecOps Engineering</span><span class="sep">&gt;&gt;</span>
+						<span>Azure DevOps Pipelines</span><span class="sep">&gt;&gt;</span>
+						<span>Terraform Infrastructure</span><span class="sep">&gt;&gt;</span>
+						<span>Kubernetes &amp; GitOps</span><span class="sep">&gt;&gt;</span>
+						<span>PHP Web Development</span><span class="sep">&gt;&gt;</span>
+						<span>MySQL Optimization</span><span class="sep">&gt;&gt;</span>
+						<span>Technical Documentation</span><span class="sep">&gt;&gt;</span>
+						<span>IT Troubleshooting</span><span class="sep">&gt;&gt;</span>
+						<span>DevSecOps Engineering</span><span class="sep">&gt;&gt;</span>
+						<span>Azure DevOps Pipelines</span><span class="sep">&gt;&gt;</span>
+						<span>Terraform Infrastructure</span><span class="sep">&gt;&gt;</span>
+						<span>Kubernetes &amp; GitOps</span><span class="sep">&gt;&gt;</span>
+						<span>PHP Web Development</span><span class="sep">&gt;&gt;</span>
+						<span>MySQL Optimization</span><span class="sep">&gt;&gt;</span>
+						<span>Technical Documentation</span><span class="sep">&gt;&gt;</span>
+						<span>IT Troubleshooting</span><span class="sep">&gt;&gt;</span>
 					</div>
 				</div>
 			</section>
 
 			<section id="experience" class="section reveal">
 				<div class="container">
-					<p class="section-label">02 &mdash; Experience</p>
-					<h2>Where I&rsquo;ve worked</h2>
-					<div class="timeline">
-						<article class="timeline-item">
-							<span class="timeline-date">May 2026 &ndash; Aug 2026</span>
-							<div>
-								<h3>DevSecOps Engineer <span>&mdash; Marathon Petroleum Company</span></h3>
-								<p>Designed standardized Azure DevOps CI/CD pipelines, integrated automated security checks, built modular Terraform infrastructure, automated service integrations with Azure Functions, and optimized Azure SQL databases.</p>
+					<p class="section-label"><span class="prompt">guest@rileyboughner</span><span class="path">:~$</span> ls -la experience/</p>
+					<div class="listing">
+						<article class="listing-item">
+							<div class="listing-head">
+								<span class="perm">drwxr-xr-x</span>
+								<span class="dirname">marathon-petroleum/</span>
+								<span class="daterange">May 2026 &ndash; Aug 2026</span>
+							</div>
+							<div class="listing-body">
+								<h3>DevSecOps Engineer</h3>
+								<p class="out">Designed standardized Azure DevOps CI/CD pipelines, integrated automated security checks, built modular Terraform infrastructure, automated service integrations with Azure Functions, and optimized Azure SQL databases.</p>
 							</div>
 						</article>
-						<article class="timeline-item">
-							<span class="timeline-date">Jan 2026 &ndash; May 2026</span>
-							<div>
-								<h3>Application Engineer <span>&mdash; Saratech</span></h3>
-								<p>Documented workflows and configurations, gathered cross-functional requirements, configured Siemens Teamcenter PLM solutions, and validated deployments through testing and debugging.</p>
+						<article class="listing-item">
+							<div class="listing-head">
+								<span class="perm">drwxr-xr-x</span>
+								<span class="dirname">saratech/</span>
+								<span class="daterange">Jan 2026 &ndash; May 2026</span>
+							</div>
+							<div class="listing-body">
+								<h3>Application Engineer</h3>
+								<p class="out">Documented workflows and configurations, gathered cross-functional requirements, configured Siemens Teamcenter PLM solutions, and validated deployments through testing and debugging.</p>
 							</div>
 						</article>
-						<article class="timeline-item">
-							<span class="timeline-date">Aug 2024 &ndash; Oct 2025</span>
-							<div>
-								<h3>Software Engineer <span>&mdash; SuperFloSystems</span></h3>
-								<p>Developed and maintained PHP-based websites, established coding standards, delivered features and bug fixes, optimized complex MySQL queries, and strengthened application security practices.</p>
+						<article class="listing-item">
+							<div class="listing-head">
+								<span class="perm">drwxr-xr-x</span>
+								<span class="dirname">superflosystems/</span>
+								<span class="daterange">Aug 2024 &ndash; Oct 2025</span>
+							</div>
+							<div class="listing-body">
+								<h3>Software Engineer</h3>
+								<p class="out">Developed and maintained PHP-based websites, established coding standards, delivered features and bug fixes, optimized complex MySQL queries, and strengthened application security practices.</p>
 							</div>
 						</article>
-						<article class="timeline-item">
-							<span class="timeline-date">Jan 2024 &ndash; Aug 2024</span>
-							<div>
-								<h3>IT Technician <span>&mdash; Carestar</span></h3>
-								<p>Resolved software, hardware, networking, and system administration tickets across Windows, Linux, and mobile platforms while performing QA checks and root-cause analysis.</p>
+						<article class="listing-item">
+							<div class="listing-head">
+								<span class="perm">drwxr-xr-x</span>
+								<span class="dirname">carestar/</span>
+								<span class="daterange">Jan 2024 &ndash; Aug 2024</span>
+							</div>
+							<div class="listing-body">
+								<h3>IT Technician</h3>
+								<p class="out">Resolved software, hardware, networking, and system administration tickets across Windows, Linux, and mobile platforms while performing QA checks and root-cause analysis.</p>
 							</div>
 						</article>
 					</div>
@@ -142,32 +161,22 @@
 
 			<section id="projects" class="section reveal">
 				<div class="container">
-					<p class="section-label">03 &mdash; Projects</p>
-					<h2>Selected work</h2>
-					<div class="project-list">
-						<article class="project-row">
-							<span class="project-index">01</span>
-							<div class="project-body">
-								<h3>Kubernetes Homelab</h3>
-								<p>Built and maintained a self-hosted Kubernetes cluster for production-like containerized workloads, GitOps delivery, Helm-based releases, NGINX ingress, Terraform-provisioned VMs, and Prometheus/Grafana monitoring.</p>
-								<div class="tag-list"><span>Kubernetes</span><span>Terraform</span><span>FluxCD</span><span>Helm</span></div>
-							</div>
+					<p class="section-label"><span class="prompt">guest@rileyboughner</span><span class="path">:~$</span> git log --oneline --stat projects/</p>
+					<div class="commit-list">
+						<article class="commit">
+							<div class="commit-head"><span class="hash">a1c4f2e</span><span class="commit-msg">Kubernetes Homelab</span></div>
+							<p class="out">Built and maintained a self-hosted Kubernetes cluster for production-like containerized workloads, GitOps delivery, Helm-based releases, NGINX ingress, Terraform-provisioned VMs, and Prometheus/Grafana monitoring.</p>
+							<div class="tag-list"><span>#kubernetes</span><span>#terraform</span><span>#fluxcd</span><span>#helm</span></div>
 						</article>
-						<article class="project-row">
-							<span class="project-index">02</span>
-							<div class="project-body">
-								<h3>Secure Azure DevOps Delivery</h3>
-								<p>Standardized reusable CI/CD pipelines and integrated security gates to help developers find vulnerabilities earlier while improving deployment consistency and release speed.</p>
-								<div class="tag-list"><span>Azure DevOps</span><span>Security</span><span>GitOps</span></div>
-							</div>
+						<article class="commit">
+							<div class="commit-head"><span class="hash">7d3b9a1</span><span class="commit-msg">Secure Azure DevOps Delivery</span></div>
+							<p class="out">Standardized reusable CI/CD pipelines and integrated security gates to help developers find vulnerabilities earlier while improving deployment consistency and release speed.</p>
+							<div class="tag-list"><span>#azure-devops</span><span>#security</span><span>#gitops</span></div>
 						</article>
-						<article class="project-row">
-							<span class="project-index">03</span>
-							<div class="project-body">
-								<h3>Cloud Automation with Azure Functions</h3>
-								<p>Developed backend automation and service integrations that reduced manual operational overhead and simplified developer workflows.</p>
-								<div class="tag-list"><span>Azure Functions</span><span>Terraform</span><span>Azure SQL</span></div>
-							</div>
+						<article class="commit">
+							<div class="commit-head"><span class="hash">f082c6b</span><span class="commit-msg">Cloud Automation with Azure Functions</span></div>
+							<p class="out">Developed backend automation and service integrations that reduced manual operational overhead and simplified developer workflows.</p>
+							<div class="tag-list"><span>#azure-functions</span><span>#terraform</span><span>#azure-sql</span></div>
 						</article>
 					</div>
 				</div>
@@ -175,9 +184,8 @@
 
 			<section id="tech" class="section reveal">
 				<div class="container">
-					<p class="section-label">04 &mdash; Toolkit</p>
-					<h2>Core technologies I rely on</h2>
-					<div class="stamp-grid">
+					<p class="section-label"><span class="prompt">guest@rileyboughner</span><span class="path">:~$</span> dpkg -l | grep installed</p>
+					<div class="pkg-grid">
 						<span>Python</span><span>Bash</span><span>PowerShell</span><span>C/C++</span><span>JavaScript</span><span>PHP</span><span>Azure</span><span>Terraform</span><span>Kubernetes</span><span>FluxCD</span><span>Azure DevOps Pipelines</span><span>GitOps</span><span>Prometheus</span><span>Grafana</span><span>Git</span><span>Helm</span><span>Linux</span><span>NGINX</span><span>Docker</span><span>MySQL</span>
 					</div>
 				</div>
@@ -186,10 +194,11 @@
 			<section id="contact" class="section reveal">
 				<div class="container contact-layout">
 					<div>
-						<p class="section-label">05 &mdash; Contact</p>
+						<p class="section-label"><span class="prompt">guest@rileyboughner</span><span class="path">:~$</span> mail -s "let's talk"</p>
 						<h2>Let&rsquo;s build something.</h2>
-						<p>I&rsquo;m available for full-time software engineering, DevSecOps, cloud infrastructure, and platform engineering opportunities beginning May 2027.</p>
+						<p class="out">I&rsquo;m available for full-time software engineering, DevSecOps, cloud infrastructure, and platform engineering opportunities beginning May 2027.</p>
 						<a class="contact-email" href="mailto:Mail@RileyBoughner.dev">Mail@RileyBoughner.dev</a>
+						<p class="section-label list-label"><span class="prompt">guest@rileyboughner</span><span class="path">:~$</span> ls contacts/</p>
 						<ul class="contact-links">
 							<li><a href="https://RileyBoughner.dev" target="_blank" rel="noreferrer">RileyBoughner.dev</a></li>
 							<li><a href="https://github.com/RileyBoughner" target="_blank" rel="noreferrer">github.com/RileyBoughner</a></li>
@@ -197,11 +206,12 @@
 						</ul>
 					</div>
 					<form class="contact-form" id="contactForm">
-						<label>Name<input type="text" placeholder="Your name" required /></label>
-						<label>Email<input type="email" placeholder="you@example.com" required /></label>
-						<label>Opportunity Type<input type="text" placeholder="Full-time, internship, or project" /></label>
-						<label>Message<textarea rows="4" placeholder="Share a brief overview of the opportunity" required></textarea></label>
-						<button type="submit" class="btn btn-primary">Send Message</button>
+						<div class="form-titlebar"><span class="brand-dot"></span><span class="brand-dot"></span><span class="brand-dot"></span><span class="form-title">send_message.sh</span></div>
+						<label>&gt; name<input type="text" placeholder="your name" required /></label>
+						<label>&gt; email<input type="email" placeholder="you@example.com" required /></label>
+						<label>&gt; opportunity_type<input type="text" placeholder="full-time, internship, or project" /></label>
+						<label>&gt; message<textarea rows="4" placeholder="share a brief overview of the opportunity" required></textarea></label>
+						<button type="submit" class="btn btn-primary">$ ./send_message.sh</button>
 						<p class="form-note" id="formNote" role="status"></p>
 					</form>
 				</div>
@@ -210,8 +220,7 @@
 
 		<footer class="site-footer">
 			<div class="container footer-content">
-				<p>Riley Boughner</p>
-				<p>&copy; <span id="year"></span> &middot; Designed &amp; built by hand.</p>
+				<p><span class="prompt">guest@rileyboughner</span><span class="path">:~$</span> <span class="out"># Riley Boughner &middot; &copy; <span id="year"></span> &middot; session closed</span> <span class="cursor" aria-hidden="true"></span></p>
 			</div>
 		</footer>
 

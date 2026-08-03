@@ -14,12 +14,14 @@ window.addEventListener("scroll", () => {
 
 // Mobile menu toggle.
 menuButton.addEventListener("click", () => {
-	menu.classList.toggle("open");
+	const isOpen = menu.classList.toggle("open");
+	menuButton.setAttribute("aria-expanded", String(isOpen));
 });
 
 navLinks.forEach((link) => {
 	link.addEventListener("click", () => {
 		menu.classList.remove("open");
+		menuButton.setAttribute("aria-expanded", "false");
 	});
 });
 
@@ -87,7 +89,7 @@ const formNote = document.getElementById("formNote");
 if (contactForm) {
 	contactForm.addEventListener("submit", (event) => {
 		event.preventDefault();
-		formNote.textContent = "Thanks — I'll get back to you soon. (Email me directly for now.)";
+		formNote.textContent = "> 200 OK — message queued. I'll get back to you soon (email me directly for now).";
 		contactForm.reset();
 	});
 }
